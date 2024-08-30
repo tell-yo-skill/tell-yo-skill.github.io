@@ -11,7 +11,13 @@
 </script>
 
 <template>
-	<div class="bg-zinc-100 grid grid-cols-1 min-h-lvh justify-items-center items-center">
+	<div class="
+		bg-zinc-100
+		grid grid-cols-1
+		min-h-lvh
+		justify-items-center
+		items-center
+	">
 		<div class="w-11/12 lg:w-1/2">
 			<Headerro/>
 			<main>
@@ -21,7 +27,8 @@
 				<Selectorro  :options="keywords"/>
 			</main>
 			<footer class="text-center text-zinc-500 py-10">
-				&copy; 2024 czbd
+				&copy; 2024 czbd. For due historical record: at this date,
+				this was the easiest application question.
 			</footer>
 		</div>
 	</div>

@@ -1,20 +1,18 @@
 <template>
     <header class="flex flex-col justify-center py-5">
-        <h1
-            class="
-                text-4xl
-                hover:text-5xl
-                object-contain
-                hover:font-black
-                italic
-                text-transparent
-                bg-clip-text
-                bg-zinc-900
-                hover:bg-gradient-to-r
-                from-zinc-900
-                to-red-500
-            "
-        ></h1>
+        <h1 class="
+            text-4xl
+            hover:text-5xl
+            object-contain
+            hover:font-black
+            italic
+            text-transparent
+            bg-clip-text
+            bg-zinc-900
+            hover:bg-gradient-to-r
+            from-zinc-900
+            to-red-500
+        "></h1>
     </header>
 </template>
 
