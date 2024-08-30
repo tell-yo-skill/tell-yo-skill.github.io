@@ -1,35 +1,23 @@
-<script setup lang="ts" vapor>
+<script setup lang="ts">
 	import { ref, watch } from "vue";
-	import MyAwesomeButton from "./components/MyAwesomeButton.vue";
-	const amIVue = ref(true);
-	const vueTitle = ref("Vite Vue!");
-	watch(vueTitle, (vueTitle: string, prevVueTitle: string) => {
-		document.title = vueTitle; // No bueno
-	});
-	function aOk(event: Event): void {
-		amIVue.value = !amIVue.value;
-		vueTitle.value = amIVue.value ? "Vite Vue!" : "Vite nie-Vue!";
-	}
+	import Selectorro from "./components/Selectorro.vue";
+	const test = ref("test");
+	const keywords = [
+		"C", "C++", "CMake", "JSON", "Node.js", "YAML", "Swagger", "Wikipedia",
+		"Java", "PHP", "Python", "Windows", "Mac OS X", "Linux", "BSD", "Unix",
+		
+	];
 </script>
 
 <template>
 	<header>
-		<button>hello i am a button</button>
+		
 	</header>
 	<main>
-		{{ vueTitle }}
-		<MyAwesomeButton @click="aOk">
-			<!-- Ten przycisk uważa przeciwnie -->
-			{{ amIVue ? "Nie jestem Vue" : "Jednak jestem Vue" }}
-		</MyAwesomeButton>
+		{{  test }}
+		<Selectorro :options="keywords"/>
 	</main>
+	<footer>
+		
+	</footer>
 </template>
-
-<style scoped lang="scss">
-	main {
-		background-color: #ff0;
-		button:after {
-			content: "!!!";
-		}
-	}
-</style>
